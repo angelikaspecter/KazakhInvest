@@ -1,0 +1,38 @@
+.main {
+    &__promo {
+        position: relative;
+        overflow: hidden;
+    }
+    &__info {
+        position: relative;
+        overflow: hidden;
+    }
+    &__map {
+        position: relative;
+        overflow: hidden;
+    }
+    &__rate {
+        position: relative;
+        overflow: hidden;
+    }
+    &__about {
+        position: relative;
+        overflow: hidden;
+    }
+    &__partners {
+        position: relative;
+        overflow: hidden;
+    }
+    &__contact {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@import "_promo";
+@import "_info";
+@import "_map";
+@import "_rate";
+@import "_about";
+@import "_partners";
+@import "_contact";

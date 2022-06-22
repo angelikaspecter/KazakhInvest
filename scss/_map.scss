@@ -1,0 +1,47 @@
+.map {
+    position: relative;
+    & svg {
+        width: 100%;
+        margin-top: -40px;
+        z-index: -1;
+        background: var(--text-color);
+        min-height: 600px;
+        & a {
+            cursor: pointer;
+            & path {
+                transition: 0.3s ease-in-out;
+            }
+            &:hover {
+                & path {
+                    fill: var(--btn-bg);
+                }
+            }
+        }
+        & .map_text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            fill: #767d83;
+        }
+    }
+    &__header {
+        position: absolute;
+        top: 5em;
+        width: 100%;
+        color: var(--white);
+        & .container {
+            position: relative;
+        }
+    }
+    &__regions {
+        position: relative;
+    }
+    &__modal {
+        position: relative;
+    }
+}
+
+@import "_regions";
+@import "_modal";

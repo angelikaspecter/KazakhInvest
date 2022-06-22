@@ -1,0 +1,41 @@
+.benefits {
+    & .card {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5em;
+        background: rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(12px);
+        border-radius: 10px;
+        border: none;
+        &:hover {
+            margin-top: -10px;
+        }
+        & .card-header {
+            background: var(--white);
+            box-shadow: 0 10px 20px rgba(14, 64, 104, 0.35);
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            margin-right: 1em;
+            & img {
+                width: 100%;
+            }
+        }
+        & .card-body {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            & .card-text {
+                color: var(--white);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}

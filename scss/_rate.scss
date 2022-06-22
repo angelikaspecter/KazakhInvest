@@ -1,0 +1,33 @@
+.rate {
+    background: var(--light-bg) url(../img/rating-back.png) no-repeat center;
+    background-size: cover;
+    color: var(--text-color);
+    padding: 5em 0;
+    z-index: 0;
+    &__title {
+        color: var(--text-color);
+        margin-bottom: 40px;
+    }
+    & .card {
+        background: transparent;
+        border: none;
+        & .card-header {
+            background: transparent;
+            border-bottom: 1px solid var(--btn-bg);
+            & p {
+                font-weight: bold;
+                font-size: 54px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: var(--btn-bg);
+            }
+        }
+        & .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            & .card-text {
+                color: var(--text-color);
+            }
+        }
+    }
+}

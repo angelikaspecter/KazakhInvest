@@ -1,0 +1,13 @@
+.contain {
+    display: flex;
+    justify-content: space-between;
+    z-index: 555;
+    &__video {
+        position: relative;
+    }
+    &__form {
+        position: relative;
+    }
+}
+
+@import "_form";

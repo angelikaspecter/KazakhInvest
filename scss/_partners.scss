@@ -1,0 +1,17 @@
+.partners {
+    background: var(--white);
+    padding: 5em 0;
+    & .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 120px;
+        @media (max-width: 399px) {
+            height: 100px;
+        }
+        @media (min-width: 400px) and (max-width: 575px) {
+            height: 140px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.contact {
+    background: var(--light-bg);
+    color: var(--text-color);
+    @media (max-width: 575px) {
+        padding: 5em 0 7em;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        padding: 5em 0 7em;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 5em 0 8em;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 5em 0 10em;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        padding: 5em 0 10em;
+    }
+    @media (min-width: 1400px) {
+        padding: 5em 0 10em;
+    }
+}

@@ -1,0 +1,116 @@
+.info {
+    background: var(--white) url("../img/nur-sultan.png") no-repeat 50% 100%;
+    background-size: contain;
+    @media (max-width: 575px) {
+        padding: 5em 0 7em;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+        padding: 5em 0 10em;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 5em 0 14em;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 5em 0 17em;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        padding: 5em 0 17em;
+    }
+    @media (min-width: 1400px) {
+        padding: 5em 0 22em;
+    }
+    & .card {
+        background: var(--light-bg);
+        backdrop-filter: blur(12px);
+        border: none;
+        &:hover {
+            background: var(--light-bg);
+            box-shadow: 0 20px 30px rgba(6, 75, 131, 0.1);
+        }
+        @media (max-width: 767px) {
+            min-height: 250px;
+            max-height: 260px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            height: 260px;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            height: 260px;
+        }
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            height: 260px;
+        }
+        @media (min-width: 1400px) {
+            height: 240px;
+        }
+        & .card-header {
+            background: transparent;
+            border: none;
+            padding: 1.5em;
+            & .card-title {
+                transition: 0.3s;
+                font-weight: bold;
+                font-size: 12px;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: var(--text-color);
+                padding: 0;
+                &:hover {
+                    color: var(--btn-bg-hov);
+                }
+            }
+        }
+        & .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 1.5em 1.5em;
+            & .card-subtitle {
+                font-weight: bold;
+                font-size: 84px;
+                line-height: 84px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: var(--btn-bg);
+                & span {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    color: var(--text-color);
+                }
+            }
+            & .card-project {
+                display: flex;
+                justify-content: space-between;
+                & img {
+                    max-width: 120px;
+                    height: 42px;
+                    margin-right: 1em;
+                }
+                & .card-text {
+                    font-weight: bold;
+                    font-size: 0.8em;
+                }
+            }
+            & .card-btn {
+                max-width: 10em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--white);
+                background: var(--btn-bg);
+                border-radius: 34px;
+                text-decoration: none;
+                transition: 0.3s ease;
+                margin: 2em 0 0;
+                margin-left: auto;
+                &:hover {
+                    color: var(--white);
+                    background: var(--btn-bg-hov);
+                }
+            }
+        }
+    }
+}
